@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper
+END
+ZooKeeperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/ZooKeeperTest.java
+END
+JaasConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/JaasConfiguration.java
+END
+VerGenTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/VerGenTest.java
+END
+TestableZooKeeper.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/TestableZooKeeper.java
+END
+MultiResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/MultiResponseTest.java
+END
+JUnit4ZKTestRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/JUnit4ZKTestRunner.java
+END
+PortAssignment.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/PortAssignment.java
+END
+ClientReconnectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/ClientReconnectTest.java
+END
+MultiTransactionRecordTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/MultiTransactionRecordTest.java
+END
+ZKTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/ZKTestCase.java
+END

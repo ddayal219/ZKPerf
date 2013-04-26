@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c
+END
+c-doc.Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/c-doc.Doxyfile
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/Makefile.am
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/README.txt
+END
+aminclude.am
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/aminclude.am
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/LICENSE
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/configure.ac
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/INSTALL
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/acinclude.m4
+END

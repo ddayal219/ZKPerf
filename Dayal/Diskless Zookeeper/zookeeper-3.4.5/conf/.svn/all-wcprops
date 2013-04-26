@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/conf
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/conf/log4j.properties
+END
+configuration.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/conf/configuration.xsl
+END
+zoo_sample.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/conf/zoo_sample.cfg
+END

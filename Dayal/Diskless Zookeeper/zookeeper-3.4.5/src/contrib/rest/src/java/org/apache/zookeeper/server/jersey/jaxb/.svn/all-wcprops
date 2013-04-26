@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb
+END
+ZChildren.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZChildren.java
+END
+ZError.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZError.java
+END
+ZStat.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZStat.java
+END
+ZPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZPath.java
+END
+ZChildrenJSON.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZChildrenJSON.java
+END
+ZSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/jaxb/ZSession.java
+END

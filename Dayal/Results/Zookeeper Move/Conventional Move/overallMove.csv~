@@ -1,0 +1,28 @@
+Test Name,Transaction Log Location,Log Location Configuration ,SnapCount Value,Machine,Server Version,Operation,Number Of ZK Instances in Ensemble,Number of Znodes Request Per Client, Number of Clients, Total Number of Nodes Request,Execution Time(s),Rate(Znodes/s)
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.029,35
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.041,74
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.125,80
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.434,72
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,1.137,88
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,3.791,84
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,11.144,90
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,34.517,92
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,106.121,95
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.019,53
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.037,82
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.071,141
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.216,144
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,0.628,160
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,1.372,231
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,1.503,666
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,3.669,862
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,9.308,1075
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.004,250
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.009,334
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.018,556
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.043,721
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,0.291,344
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,0.709,446
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,1.108,903
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,3.477,910
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,8.832,1133

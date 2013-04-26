@@ -1,0 +1,5 @@
+The Test Code is in Netbeans project format.
+
+Open the project in Netbeans to Run it.
+
+Add Riak Client jar in the project folder to the libraries path. 

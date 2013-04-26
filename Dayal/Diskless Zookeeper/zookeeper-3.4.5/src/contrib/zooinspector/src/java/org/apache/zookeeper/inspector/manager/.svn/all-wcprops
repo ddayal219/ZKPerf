@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager
+END
+ZooInspectorNodeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorNodeManager.java
+END
+ZooInspectorNodeTreeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorNodeTreeManager.java
+END
+ZooInspectorReadOnlyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorReadOnlyManager.java
+END
+ZooInspectorManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorManager.java
+END
+NodeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/NodeListener.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/Pair.java
+END
+ZooInspectorManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager/ZooInspectorManagerImpl.java
+END

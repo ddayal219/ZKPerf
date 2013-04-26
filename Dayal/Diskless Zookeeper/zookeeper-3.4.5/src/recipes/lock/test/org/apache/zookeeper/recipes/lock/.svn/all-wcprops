@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/test/org/apache/zookeeper/recipes/lock
+END
+WriteLockTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/test/org/apache/zookeeper/recipes/lock/WriteLockTest.java
+END
+ZNodeNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/test/org/apache/zookeeper/recipes/lock/ZNodeNameTest.java
+END

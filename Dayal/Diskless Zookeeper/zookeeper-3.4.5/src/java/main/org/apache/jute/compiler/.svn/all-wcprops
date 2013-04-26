@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler
+END
+JInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JInt.java
+END
+JLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JLong.java
+END
+JCompType.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JCompType.java
+END
+JVector.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JVector.java
+END
+JByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JByte.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/package.html
+END
+JFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JFloat.java
+END
+JString.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JString.java
+END
+JBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JBuffer.java
+END
+JDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JDouble.java
+END
+JMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JMap.java
+END
+CSharpGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/CSharpGenerator.java
+END
+JRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JRecord.java
+END
+JavaGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JavaGenerator.java
+END
+JBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JBoolean.java
+END
+JFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JFile.java
+END
+CppGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/CppGenerator.java
+END
+CGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/CGenerator.java
+END
+JType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JType.java
+END
+JField.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/jute/compiler/JField.java
+END

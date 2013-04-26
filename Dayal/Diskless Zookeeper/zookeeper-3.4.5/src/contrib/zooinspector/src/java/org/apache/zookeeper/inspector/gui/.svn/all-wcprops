@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui
+END
+about.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/about.html
+END
+ZooInspectorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorPanel.java
+END
+ZooInspectorTreeViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorTreeViewer.java
+END
+ZooInspectorIconResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorIconResources.java
+END
+NodeViewersChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/NodeViewersChangeListener.java
+END
+ZooInspectorAboutDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorAboutDialog.java
+END
+ZooInspectorNodeViewersDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorNodeViewersDialog.java
+END
+ZooInspectorNodeViewersPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorNodeViewersPanel.java
+END
+ZooInspectorConnectionPropertiesDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui/ZooInspectorConnectionPropertiesDialog.java
+END

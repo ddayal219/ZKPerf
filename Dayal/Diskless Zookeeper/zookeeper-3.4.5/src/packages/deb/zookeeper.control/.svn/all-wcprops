@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control
+END
+postinst
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/postinst
+END
+postrm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/postrm
+END
+preinst
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/preinst
+END
+conffile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/conffile
+END
+prerm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/prerm
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/packages/deb/zookeeper.control/control
+END

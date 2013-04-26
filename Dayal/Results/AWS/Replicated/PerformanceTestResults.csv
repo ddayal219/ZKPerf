@@ -1,0 +1,10 @@
+Test Name,Configuration Name,Server Version,Client API version,Number Of ZK Instances in Ensemble,Number of Znodes,Execution Time(s),Rate(Znodes/s)
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,1,0.144,7.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,3,0.022,137.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,10,0.067,150.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,31,0.167,186.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,100,0.52,193.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,316,1.586,200.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,1000,4.742,211.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,3162,12.964,244.0
+ZK Performance Test-Replicated,OnDisk(8 GiO HDD) AWS Instance,Zookeeper 3.4.4,Zookeeper JAVA API 3.4.5,3,10000,152.717,66.0

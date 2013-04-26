@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence
+END
+FileTxnLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java
+END
+TxnLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/TxnLog.java
+END
+FileTxnSnapLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/Util.java
+END
+SnapShot.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/SnapShot.java
+END
+FileSnap.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/persistence/FileSnap.java
+END

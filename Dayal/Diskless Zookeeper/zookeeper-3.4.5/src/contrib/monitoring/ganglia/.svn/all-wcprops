@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia
+END
+Screenshot.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia/Screenshot.png
+END
+zookeeper.pyconf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia/zookeeper.pyconf
+END
+modpython.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia/modpython.conf
+END
+zookeeper_ganglia.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia/zookeeper_ganglia.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/ganglia/README
+END

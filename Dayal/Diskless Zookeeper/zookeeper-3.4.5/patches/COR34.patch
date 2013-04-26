@@ -1,0 +1,102 @@
+Index: src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java	(working copy)
+@@ -53,6 +53,7 @@
+     private final File snapDir;
+     private TxnLog txnLog;
+     private SnapShot snapLog;
++   public static File ssnapLog;
+     public final static int VERSION = 2;
+     public final static String version = "version-";
+     
+@@ -80,6 +81,7 @@
+ 
+         this.dataDir = new File(dataDir, version + VERSION);
+         this.snapDir = new File(snapDir, version + VERSION);
++        ssnapLog=snapDir;
+         if (!this.dataDir.exists()) {
+             if (!this.dataDir.mkdirs()) {
+                 throw new IOException("Unable to create data directory "
+@@ -94,6 +96,7 @@
+         }
+         txnLog = new FileTxnLog(this.dataDir);
+         snapLog = new FileSnap(this.snapDir);
++       
+     }
+     
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java	(working copy)
+@@ -82,7 +82,9 @@
+     LocalPeerBean jmxLocalPeerBean;
+     LeaderElectionBean jmxLeaderElectionBean;
+     QuorumCnxManager qcm;
+-
++    
++    
++    
+     /* ZKDatabase is a top level member of quorumpeer 
+      * which will be used in all the zookeeperservers
+      * instantiated later. Also, it is created once on 
+@@ -90,7 +92,8 @@
+      * message from the leader
+      */
+     private ZKDatabase zkDb;
+-
++    private ZooKeeperServer zks;
++    
+     public static class QuorumServer {
+         public QuorumServer(long id, InetSocketAddress addr,
+                 InetSocketAddress electionAddr) {
+@@ -134,6 +137,7 @@
+      * We need this distinction to decide which ServerState to move to when 
+      * conditions change (e.g. which state to become after LOOKING). 
+      */
++    
+     public enum LearnerType {
+         PARTICIPANT, OBSERVER;
+     }
+@@ -740,7 +744,17 @@
+                         follower.followLeader();
+                     } catch (Exception e) {
+                         LOG.warn("Unexpected exception",e);
+-                    } finally {
++                    } finally { //take snapshot here
++                    	
++                      try {
++                    	  logFactory.save(this.zkDb.getDataTree(),this.zkDb.getSessionWithTimeOuts());
++                      } catch (IOException e) {
++						//TODO Auto-generated catch block
++                    	 // System.out.println("error"+e);
++						e.printStackTrace();
++					}
++                    
++                       	System.out.println("shutdown follower");
+                         follower.shutdown();
+                         setFollower(null);
+                         setPeerState(ServerState.LOOKING);
+@@ -754,8 +768,18 @@
+                         setLeader(null);
+                     } catch (Exception e) {
+                         LOG.warn("Unexpected exception",e);
+-                    } finally {
+-                        if (leader != null) {
++                    } finally { //take snapshot here
++                    	System.out.println("shutdown leader");
++                    	 try {
++     					// System.out.println("Taking snapshot on Leader shutdown");
++                    		 FileTxnSnapLog txn=new FileTxnSnapLog(FileTxnSnapLog.ssnapLog,FileTxnSnapLog.ssnapLog);
++     						txn.save(this.zkDb.getDataTree(), this.zkDb.getSessionWithTimeOuts());
++                           } catch (IOException e) {
++     						//TODO Auto-generated catch block
++                         	//System.out.println("error"+e);
++     						e.printStackTrace();
++     					}
++                    	if (leader != null) {
+                             leader.shutdown("Forcing shutdown");
+                             setLeader(null);
+                         }
+
+

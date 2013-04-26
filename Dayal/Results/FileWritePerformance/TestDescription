@@ -1,0 +1,11 @@
+Test: Obtain a lower bound on Time and Upper Bound on Speed of On-Disk Zookeeper throughput.
+
+Collect performance data to measure the throughput for writing to disk, for various sizes of N and B, via the following algorithm:
+
+1. Open a file of size N*B for writing.
+2. for i = 0 to N-1
+Write B bytes at position i*B to the file.
+3. Close the file.
+
+Time step 2 only.
+

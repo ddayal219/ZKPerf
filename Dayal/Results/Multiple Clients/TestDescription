@@ -1,0 +1,15 @@
+Test Name:
+
+ZK Performance Test - Multiple Clients
+
+Test Description:
+
+The purpose of the test is to check the performance of zookeeper with the requests from multiple clients.
+
+Mulitple clients are simulated by using multiple java threads requesting to zookeeper parallely.
+
+In this way the request load on zookeeper is increased and the performance is measured.
+
+Also, Requests made by each client is run in Asynchronous mode and the performance throughput is measured.
+
+

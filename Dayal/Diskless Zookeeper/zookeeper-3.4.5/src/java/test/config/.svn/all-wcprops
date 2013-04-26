@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/config
+END
+findbugsExcludeFile.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/config/findbugsExcludeFile.xml
+END

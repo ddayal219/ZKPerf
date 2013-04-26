@@ -1,0 +1,21 @@
+ZkMove.patch Description
+
+1. Added a method move()
+
+Method Name: move
+Number of Arguments: 4
+Arguments:
+	1. Source Node - String
+	2. Destination Node - String
+	3. Watcher 
+	4. stat - Stat
+
+2. Added the operation to commandMap to use it in Zookeeper Client.
+
+Usage:
+
+move [source_node_path] [destination_node_path]
+
+e.g:
+
+move /source_node /destination_node

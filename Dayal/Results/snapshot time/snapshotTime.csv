@@ -1,0 +1,14 @@
+Test Name,ServerVersion,Number of Znodes,Snapshot time(ms)
+Zookeeper-SnapTime,Zookeeper-3.4.5,1,1
+Zookeeper-SnapTime,Zookeeper-3.4.5,3,1
+Zookeeper-SnapTime,Zookeeper-3.4.5,10,2
+Zookeeper-SnapTime,Zookeeper-3.4.5,31,3
+Zookeeper-SnapTime,Zookeeper-3.4.5,100,3
+Zookeeper-SnapTime,Zookeeper-3.4.5,316,3
+Zookeeper-SnapTime,Zookeeper-3.4.5,1000,7
+Zookeeper-SnapTime,Zookeeper-3.4.5,3162,13
+Zookeeper-SnapTime,Zookeeper-3.4.5,10000,23
+Zookeeper-SnapTime,Zookeeper-3.4.5,31622,68
+Zookeeper-SnapTime,Zookeeper-3.4.5,100000,198
+Zookeeper-SnapTime,Zookeeper-3.4.5,316227,737
+Zookeeper-SnapTime,Zookeeper-3.4.5,1000000,2067

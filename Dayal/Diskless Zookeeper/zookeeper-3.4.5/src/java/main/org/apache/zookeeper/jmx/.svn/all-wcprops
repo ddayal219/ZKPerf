@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/jmx
+END
+ManagedUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/jmx/ManagedUtil.java
+END
+MBeanRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/jmx/MBeanRegistry.java
+END
+CommonNames.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/jmx/CommonNames.java
+END
+ZKMBeanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/jmx/ZKMBeanInfo.java
+END

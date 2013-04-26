@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey
+END
+DeleteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/DeleteTest.java
+END
+CreateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/CreateTest.java
+END
+RootTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/RootTest.java
+END
+SessionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/SessionTest.java
+END
+RestTestSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/RestTestSuite.java
+END
+WadlTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/WadlTest.java
+END
+GetChildrenTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/GetChildrenTest.java
+END
+Base.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/Base.java
+END
+SetTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/SetTest.java
+END
+ExistsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/ExistsTest.java
+END
+GetTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/test/org/apache/zookeeper/server/jersey/GetTest.java
+END

@@ -1,0 +1,51 @@
+Test Name,Transaction Log Location,SnapCount Value,Machine,Server Version,Operation,Number Of ZK Instances in Ensemble,Number of Znodes Request Per Client, Number of Clients, Total Number of Nodes Request,Execution Time(s),Rate(Znodes/s)
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,1,1,1,0.017,59
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,3,1,3,0.008,375
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,10,1,10,0.007,1429
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,31,1,31,0.02,1550
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,100,1,100,0.045,2223
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,316,1,316,0.199,1588
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,1000,1,1000,0.393,2545
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,3162,1,3162,1.098,2880
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,2.364,4231
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,31622,1,31622,6.554,4825
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,1,100000,1,100000,21.886,4570
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,1,1,1,0.029,35
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,3,1,3,0.014,215
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,10,1,10,0.031,323
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,31,1,31,0.072,431
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,100,1,100,0.278,360
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,316,1,316,0.768,412
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,1000,1,1000,1.778,563
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,3162,1,3162,3.799,833
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,1,10000,5.853,1709
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,31622,1,31622,14.977,2112
+ZK Performance Test-Write,RamDisk,10000,Local Machine,Zookeeper-3.4.5,Create,3,100000,1,100000,45.761,2186
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,1,1,1,0.009,112
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,3,1,3,0.005,600
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,10,1,10,0.004,2500
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,31,1,31,0.011,2819
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,100,1,100,0.069,1450
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,316,1,316,0.195,1621
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,1000,1,1000,0.584,1713
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,3162,1,3162,1.333,2373
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,10000,1,10000,2.599,3848
+ZK Performance Test-Write,Ramdisk,10000,LocalMachine,Zookeeper-3.3.6,Create,1,31622,1,31622,6.531,4842
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;1;1;1;0.028;36
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;3;1;3;0.005;600
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;10;1;10;0.013;770
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;31;1;31;0.036;862
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;100;1;100;0.159;629
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;316;1;316;0.371;852
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;1000;1;1000;1.166;858
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;3162;1;3162;3.091;1023
+ZK Performance Test-Write;Ramdisk;10000;AWS;Zookeeper-3.4.5;Create;1;10000;1;10000;6.002;1667
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,1,1,1,0.008,125
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,3,1,3,0.004,750
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,10,1,10,0.006,1667
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,31,1,31,0.015,2067
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,100,1,100,0.048,2084
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,316,1,316,0.175,1806
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,1000,1,1000,0.492,2033
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,3162,1,3162,1.351,2341
+ZK Performance Test-Write,Ramdisk,10000,AWS,Zookeeper-3.3.6,Create,1,10000,1,10000,3.198,3127

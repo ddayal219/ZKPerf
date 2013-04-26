@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/build.xml
+END
+NOTICE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/NOTICE.txt
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/ivy.xml
+END
+rest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/rest.sh
+END
+SPEC.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/SPEC.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/README.txt
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests
+END
+TestDriver.cc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests/TestDriver.cc
+END
+Util.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests/Util.cc
+END
+TestClient.cc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests/TestClient.cc
+END
+Util.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests/Util.h
+END
+zkServer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/lock/src/c/tests/zkServer.sh
+END

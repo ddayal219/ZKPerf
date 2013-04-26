@@ -1,0 +1,234 @@
+Test Name: ZK Performance Test - Write
+
+Log Location: Disk
+
+Test Description:
+
+The aim of the test is to measure the write performance of zookeeper with its Default settings.
+
+The configuration used is:
+
+tickTime=2000
+dataDir=/mnt/ramdisk/zookeeper3.4.5/
+clientPort=2184
+
+The logs are stored on the Disk.
+
+With this Default setting, different Sub scenarios like
+
+1. Replicated Zookeeper with 3 instances
+2. Zookeeper on AWS Instance
+
+are also Tested.
+---------------------------------------------------------------------------------------------------
+
+Test Name: Zk Performance Test - Write
+
+Log Location: RamDisk
+
+Description:
+
+The aim of the test is to check the Write performance of zookeeper with logs on Ramdisk. The procedure for using the test suite is given below.
+
+Ramdisk Configuration:
+
+Size of Ramdisk = 16 Gio
+Total Size of Ram = 32 Gio
+
+Test Suite Procedure:
+
+1. Create a tmpfs ramdisk of size 16g
+
+$mkdir /mnt/ramdisk
+
+$sudo mount -t tmpfs -o size=16g none /mnt/ramdisk
+
+2. Create a directory to store the logs in the ramdisk
+
+/mnt/ramdisk$ mkdir zookeeper3.4.5
+
+3. Update the dataDir in zookeeper's conf Directory
+
+dataDir=/mnt/ramdisk/zookeeper3.4.5
+
+Zookeeper now stores the logs on the ramdisk.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: ZK Performance Test - Write
+
+Number of Clients > 1
+
+Test Description:
+
+The purpose of the test is to check the performance of zookeeper with the requests from multiple clients.
+
+Mulitple clients are simulated by using multiple java threads requesting to zookeeper parallely.
+
+In this way the request load on zookeeper is increased and the performance is measured.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: Zk Performance Test - Write
+
+LogLocation: None
+
+Test Description:
+
+A precise overview of logging and snapshotting in zookeeper is as below.
+
+1. For each write operation, a log of the operation is written on the Transaction log file which is on the disk. This operation is completely sequential, only when the log is written on the disk the next operation on zookeeper can continue.
+
+2. When this logCount reaches a Value of 10,000 the entire changes in zookeeper data till now, is written on to a Snapshot and a new log file is started. This snapshotting process runs in a seperate thread and doesn't blocks zookeeper's operation.
+
+3. So, at any point of time the current snapshot + the logs will have the entire state of the zookeeper apart from its inmemory database. This snapshot and logs are used to restore the zookeeper in times of failure and restart.
+
+4. The logging process mentioned in point 1, since it is sequential as well as disk bound, it is the main reason for the slow write performance of zookeeper.
+
+Changes Done in Zookeeper Code:
+
+The append() in org.apache.zookeeper.server.persistence.FileTxnLog.java is modified to prevent zookeeper from writing the logs on to the disk.
+
+But Zookeeper continues with the same snapshotting mechanism when the snapCount reaches a 10,000.
+
+With this change in effect, the performance test is run.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: Zk Performance Test - Write
+
+LogLocation: None,
+SnapCount:0
+
+Test Description:
+
+This test is only a initial run to check the idea of a proposed change through a rough implementation.
+
+A precise overview of logging and snapshotting in zookeeper is as below.
+
+1. For each write operation, a log of the operation is written on the Transaction log file which is on the disk. This operation is completely sequential, only when the log is written on the disk the next operation on zookeeper can continue.
+
+2. When this logCount reaches a Value of 10,000 the entire changes in zookeeper data till now, is written on to a Snapshot and a new log file is started. This snapshotting process runs in a seperate thread and doesn't blocks zookeeper's operation.
+
+3. So, at any point of time the current snapshot + the logs will have the entire state of the zookeeper apart from its inmemory database. This snapshot and logs are used to restore the zookeeper in times of failure and restart.
+
+4. The logging process mentioned in point 1, since it is sequential as well as disk bound, it is the main reason for the slow write performance of zookeeper.
+
+Changes Done in Zookeeper Code:
+
+The append() in org.apache.zookeeper.server.persistence.FileTxnLog.java is modified to prevent zookeeper from writing the logs on to the disk.
+
+The Thread in org.apache.zookeeper.server.SyncRequestProcessor.java is modified to take a snapshot for every write operation on zookeeper.
+
+With this change in effect, the performance test is run.
+---------------------------------------------------------------------------------------------------
+
+Test Name: ZK Performance Test - Read
+
+Log Location: Disk
+
+Test Description:
+
+The aim of the test is to measure the Read(Get) performance of zookeeper with its Default settings.
+
+The configuration used is:
+
+tickTime=2000
+dataDir=/mnt/ramdisk/zookeeper3.4.5/
+clientPort=2184
+
+The logs are stored on the Disk.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: Zk Performance Test - Read
+
+Log Location: Ramdisk
+
+Description:
+
+The aim of the test is to check the Get(Read) performance of zookeeper with logs on Ramdisk. The procedure for using the test suite is given below.
+
+Ramdisk Configuration:
+
+Size of Ramdisk = 16 Gio
+Total Size of Ram = 32 Gio
+
+Test Suite Procedure:
+
+1. Create a tmpfs ramdisk of size 16g
+
+$mkdir /mnt/ramdisk
+
+$sudo mount -t tmpfs -o size=16g none /mnt/ramdisk
+
+2. Create a directory to store the logs in the ramdisk
+
+/mnt/ramdisk$ mkdir zookeeper3.4.5
+
+3. Update the dataDir in zookeeper's conf Directory
+
+dataDir=/mnt/ramdisk/zookeeper3.4.5
+
+Zookeeper now stores the logs on the ramdisk.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: ZK Performance Test - Producer/Consumer
+
+Test Description:
+
+1. Producer Creates Zookeeper nodes with 280 bytes of data and puts it
+   into a blocked queue.
+2. The Consumer keeps polling on the queue for any available node, as a
+   node is enqueued into the queue, the consumer process reads the data from
+   the ZK node and deletes the ZK node.
+
+Precisely,
+
+Producer Performes Create operation and Consumer performes Get+Delete operation.
+
+The throughput in the Test Results file is the combined throughput of Create+Get+Delete.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: ZK Performance Test-move
+
+Test Description:
+
+Measure the time taken and the throughput for the execution of move operation in zookeeper.
+
+The Move operation is defined as:
+
+1. Measure Start time.
+2. Create Destination node. zk.create()
+3. Read Data from Source node to a String Variable. zk.get()
+4. Set the data read to the Destination Node. zk.set()
+5. Delete the Source node. zk.delete()
+6. Measure the end time and time difference.
+7. Repeat Step 1 to 6 for different number of Nodes and measure the execution time and throughput.
+
+Also the above the test is repeated for the different configurations. The change in configurations are as follows:
+
+1. Logs on Disk.
+2. Logs on Ramdisk.
+3. Modified zookeeper with No Logging.
+
+---------------------------------------------------------------------------------------------------
+
+Test Name: ZK Performance Test - ZkMove
+
+Test Description:
+
+The move operation for Zookeeper is implemented in the Zookeeper Source Code and the performance of the implemented operation is measured.
+
+The implementation of the move operation is mentioned in the Description along with the source.
+
+Also the above the test is repeated for the different configurations. The change in configurations are as follows:
+
+1. Logs on Disk.
+2. Logs on Ramdisk.
+3. Modified zookeeper with No Logging.
+
+--------------------------------------------------------------------------------------------------
+

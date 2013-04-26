@@ -1,0 +1,23 @@
+Test Name:
+
+Zk Performance Test - No Logging
+
+Test Description:
+
+A precise overview of logging and snapshotting in zookeeper is as below.
+
+1. For each write operation, a log of the operation is written on the Transaction log file which is on the disk. This operation is completely sequential, only when the log is written on the disk the next operation on zookeeper can continue.
+
+2. When this logCount reaches a Value of 10,000 the entire changes in zookeeper data till now, is written on to a Snapshot and a new log file is started. This snapshotting process runs in a seperate thread and doesn't blocks zookeeper's operation.
+
+3. So, at any point of time the current snapshot + the logs will have the entire state of the zookeeper apart from its inmemory database. This snapshot and logs are used to restore the zookeeper in times of failure and restart.
+
+4. The logging process mentioned in point 1, since it is sequential as well as disk bound, it is the main reason for the slow write performance of zookeeper.
+
+Changes Done in Zookeeper Code:
+
+The append() in org.apache.zookeeper.server.persistence.FileTxnLog.java is modified to prevent zookeeper from writing the logs on to the disk.
+
+But Zookeeper continues with the same snapshotting mechanism when the snapCount reaches a 10,000.
+
+With this change in effect, the performance test is run.

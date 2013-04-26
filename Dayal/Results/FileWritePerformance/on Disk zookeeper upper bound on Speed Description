@@ -1,0 +1,41 @@
+From the File Write performance,
+
+It is seen that for Writing 1 GiO of data to Zookeeper 
+
+Time Taken = 1.68 s
+Throughput = 592.417 MB/s 
+
+Establishing Zookeeper on-Disk Bound on Time and throughput: 
+
+Theoritically from the above file Write performance, the Write performance of Zookeeper
+
+is estimated as:
+
+With Size of a znode =280 bytes
+
+We should be able to achieve a Write throughput of 2,125,850 ZkNodes/s
+
+But practically achieving this speed is impossible as the zookeeper Disk dependency is difference.
+
+The difference is as follows:
+
+1. Apart from the size of the ZKnode and data of the Zknode there are many other data written during each log append.
+
+e.g: The below example is a format of Zookeeper transaction log which shows the other extraneous information written apart from the data in the log.
+
+6/11/12 1:35:53 AST PM session 0x13b3dbca98b000b cxid 0x186a1 zxid 0x23b5c create '/event_p10000146244,#7878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878,v{s{31,s{'world,'anyone}}},F,-1
+
+The content after  '#' specifies the data in ASCII format
+
+2. Beyond this for each write operation TCP requests, Serialized write of logs are involved and each operation obeys the steps of ZAB protocol.
+
+So, From the tests run on Zookeeper with log on Disk.
+
+For 100,000 nodes 
+
+Lower-bound on Speed = 312.465 ms
+
+Upper-bound on Speed = 321 ZKnodes/s
+
+
+

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl
+END
+ZooKeeper.xs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/ZooKeeper.xs
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/README
+END
+ZooKeeper.pm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/ZooKeeper.pm
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/build.xml
+END
+typemap
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/typemap
+END
+NOTICE
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/NOTICE
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/LICENSE
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/MANIFEST
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/Makefile.PL
+END
+Changes
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/Changes
+END

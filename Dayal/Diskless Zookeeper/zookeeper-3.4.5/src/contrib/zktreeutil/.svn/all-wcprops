@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zktreeutil
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zktreeutil/Makefile.am
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zktreeutil/README.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zktreeutil/build.xml
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zktreeutil/configure.ac
+END

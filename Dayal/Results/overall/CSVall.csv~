@@ -1,0 +1,229 @@
+Test Name,Transaction Log Location,Log Location Configuration ,SnapCount Value,Machine,Server Version,Operation,Number Of ZK Instances in Ensemble,Number of Znodes Request Per Client, Number of Clients, Total Number of Nodes Request(Create),Execution Time(s),Rate(Znodes/s)
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,1,1,1,0.074,14
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,3,1,3,0.034,89
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10,1,10,0.056,179
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,31,1,31,0.156,199
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,100,1,100,0.478,210
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,316,1,316,1.505,210
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,1000,1,1000,4.436,226
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,3162,1,3162,11.923,266
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,32.87,305
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,31622,1,31622,98.45,322
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,100000,1,100000,312.465,321
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,1,1,1,0.026,39
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,3,1,3,0.028,108
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10,1,10,0.086,117
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,31,1,31,0.223,140
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,100,1,100,0.72,139
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,316,1,316,2.284,139
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,1000,1,1000,6.329,159
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,3162,1,3162,18.357,173
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,1,10000,54.804,183
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,31622,1,31622,172.637,184
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,100000,1,100000,608.295,165
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,1,1,1,0.036,28
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,3,1,3,0.021,143
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,10,1,10,0.063,159
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,31,1,31,0.16,194
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,100,1,100,0.462,217
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,316,1,316,1.606,197
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,1000,1,1000,4.745,211
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,3162,1,3162,14.554,218
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,10000,1,10000,46.842,214
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,31622,1,31622,148.517,213
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,1,100000,1,100000,477.993,210
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,1,1,1,0.144,7
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,3,1,3,0.022,137
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,10,1,10,0.067,150
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,31,1,31,0.167,186
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,100,1,100,0.52,193
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,316,1,316,1.586,200
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,1000,1,1000,4.742,211
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,3162,1,3162,12.964,244
+ZK Performance Test-Write,Disk,8 GiO HDD,10000,AWS,Zookeeper-3.4.5,Create,3,10000,1,10000,152.717,66
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,1,1,1,0.017,59
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,3,1,3,0.008,375
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10,1,10,0.007,1429
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,31,1,31,0.02,1550
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,100,1,100,0.045,2223
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,316,1,316,0.199,1588
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,1000,1,1000,0.393,2545
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,3162,1,3162,1.098,2880
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,2.364,4231
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,31622,1,31622,6.554,4825
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,100000,1,100000,21.886,4570
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,1,1,1,0.029,35
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,3,1,3,0.014,215
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10,1,10,0.031,323
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,31,1,31,0.072,431
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,100,1,100,0.278,360
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,316,1,316,0.768,412
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,1000,1,1000,1.778,563
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,3162,1,3162,3.799,833
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,1,10000,5.853,1709
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,31622,1,31622,14.977,2112
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,100000,1,100000,45.761,2186
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,1,1,1,0.013,77
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,3,1,3,0.003,1000
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,10,1,10,0.015,667
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,31,1,31,0.051,608
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,100,1,100,0.146,685
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,316,1,316,0.256,1235
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,1000,1,1000,0.547,1829
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,3162,1,3162,1.352,2339
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,3.061,3267
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,31622,1,31622,6.061,5218
+ZK Performance Test-Write,None,None,10000,Local Machine,Zookeeper-3.4.5,Create,1,100000,1,100000,19.29,5185
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,5.39,1856
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,5,50000,1.622,30827
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,10,100000,2.442,40951
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,15,150000,3.33,45046
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,20,200000,4.506,44386
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,25,250000,5.539,45135
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,30,300000,6.708,44723
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,35,350000,7.917,44209
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,40,400000,8.784,45538
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,45,450000,10.09,44599
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,50,500000,11.595,43123
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,1,10000,8.426,1187
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,5,50000,6.213,8048
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,10,100000,5.217,19169
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,15,150000,6.718,22329
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,20,200000,8.618,23208
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,25,250000,10.469,23881
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,30,300000,11.837,25345
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,35,350000,14.608,23960
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,40,400000,15.668,25530
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,45,450000,18.182,24750
+ZK Performance Test-Write,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,50,500000,21.445,23316
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,36.797,272
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,5,50000,77.451,646
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,10,100000,101.541,985
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,15,150000,112.25,1337
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,20,200000,103.464,1934
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,25,250000,99.532,2512
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,30,300000,93.012,3226
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,35,350000,97.445,3592
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,40,400000,100.791,3969
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,45,450000,103.596,4344
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,1,10000,50,500000,108.199,4622
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,1,10000,67.292,149
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,5,50000,130.463,384
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,10,100000,179.124,559
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,15,150000,223.456,672
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,20,200000,256.83,779
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,25,250000,284.997,878
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,30,300000,293.895,1021
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,35,350000,296.908,1179
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,40,400000,302.715,1322
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,45,450000,314.479,1431
+ZK Performance Test-Write,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create,3,10000,50,500000,317.376,1576
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,1,1,1,0.016,63
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,3,1,3,0.003,1000
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,10,1,10,0.011,910
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,31,1,31,0.033,940
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,100,1,100,0.11,910
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,316,1,316,0.502,630
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,1000,1,1000,0.956,1047
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,3162,1,3162,1.685,1877
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,10000,1,10000,2.122,4713
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,31622,1,31622,3.521,8981
+ZK Performance Test-Write,None,None,0,Local Machine,Zookeeper-3.4.5,Create,1,100000,1,100000,11.197,8931
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,1,1,1,0.002,500
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,3,1,3,0.002,1500
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,10,1,10,0.007,1429
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,31,1,31,0.011,2819
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,100,1,100,0.034,2942
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,316,1,316,0.183,1727
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,1000,1,1000,0.256,3907
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,3162,1,3162,0.69,4583
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,10000,1,10000,1.497,6681
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,31622,1,31622,3.236,9772
+ZK Performance Test-Read,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get,1,100000,1,100000,13.718,7290
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,1,1,1,0.008,125
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,3,1,3,0.001,3000
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,10,1,10,0.003,3334
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,31,1,31,0.037,838
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,100,1,100,0.051,1961
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,316,1,316,0.2,1580
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,1000,1,1000,0.345,2899
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,3162,1,3162,0.659,4799
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,10000,1,10000,1.074,9311
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,31622,1,31622,2.654,11915
+ZK Performance Test-Read,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get,1,100000,1,100000,9.191,10881
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,1,1,1,0.017,59
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,3,1,3,0.005,600
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,10,1,10,0.01,1000
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,31,1,31,0.034,912
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,100,1,100,0.085,1177
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,316,1,316,0.251,1259
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,1000,1,1000,0.505,1981
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,3162,1,3162,2.003,1579
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,10000,1,10000,5.684,1760
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,31622,1,31622,16.974,1863
+ZK Performance Test-Producer/Consumer,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,100000,1,100000,52.614,1901
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,1,1,1,0.012,84
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,3,1,3,0.019,158
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,10,1,10,0.082,122
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,31,1,31,0.272,114
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,100,1,100,0.859,117
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,316,1,316,2.47,128
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,1000,1,1000,7.608,132
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,3162,1,3162,24.093,132
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,10000,1,10000,76.372,131
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,31622,1,31622,220.486,144
+ZK Performance Test-Producer/Consumer,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Create+Delete+Get,1,100000,1,100000,675.2,149
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.029,35
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.041,74
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.125,80
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.434,72
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,1.137,88
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,3.791,84
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,11.144,90
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,34.517,92
+ZK Performance Test-move,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,106.121,95
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.019,53
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.037,82
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.071,141
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.216,144
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,0.628,160
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,1.372,231
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,1.503,666
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,3.669,862
+ZK Performance Test-move,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,9.308,1075
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1,1,1,0.004,250
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3,1,3,0.009,334
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10,1,10,0.018,556
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,31,1,31,0.043,721
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,100,1,100,0.291,344
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,316,1,316,0.709,446
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,1000,1,1000,1.108,903
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,3162,1,3162,3.477,910
+ZK Performance Test-move,None,None,10000,Local Machine,Zookeeper-3.4.5,Get+Set+Delete,1,10000,1,10000,8.832,1133
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,1,1,1,0.024,42
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,3,1,3,0.038,79
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,10,1,10,0.166,61
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,31,1,31,0.424,74
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,100,1,100,1.436,70
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,316,1,316,4.082,78
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,1000,1,1000,10.666,94
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,3162,1,3162,30.098,106
+ZK Performance Test-ZKmove,Disk,256 GiO SSD ,10000,Local Machine,Zookeeper-3.4.5,Move,1,10000,1,10000,91.992,109
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,1,1,1,0.008,125
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,3,1,3,0.01,300
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,10,1,10,0.02,500
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,31,1,31,0.076,408
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,100,1,100,0.207,484
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,316,1,316,0.506,625
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,1000,1,1000,1.001,1000
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,3162,1,3162,2.712,1166
+ZK Performance Test-ZKmove,Ram Disk,16 GiO Ramdisk ,10000,Local Machine,Zookeeper-3.4.5,Move,1,10000,1,10000,7.412,1350
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,1,1,1,0.015,67
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,3,1,3,0.013,231
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,10,1,10,0.047,213
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,31,1,31,0.137,227
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,100,1,100,0.441,227
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,316,1,316,1.038,305
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,1000,1,1000,1.028,973
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,3162,1,3162,2.476,1278
+ZK Performance Test-ZKmove,None,None,10000,Local Machine,Zookeeper-3.4.5,Move,1,10000,1,10000,6.736,1485

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg
+END
+Credentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/Credentials.java
+END
+RestCfg.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/RestCfg.java
+END
+HostPortSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/HostPortSet.java
+END
+Endpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/Endpoint.java
+END
+HostPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/java/org/apache/zookeeper/server/jersey/cfg/HostPort.java
+END

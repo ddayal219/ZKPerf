@@ -1,0 +1,7 @@
+All the zookeeper performance tests are run on the AWS server.
+
+The two main variations in the AWS server when compared to the localmachine is the Configuration of the log location:
+
+1. on Disk AWS is a Non-optimal EBS storage.
+
+2. Ramdisk used here is way too low of size 100 MB compared to the 10 GB Ramdisk used in LocalMachine.

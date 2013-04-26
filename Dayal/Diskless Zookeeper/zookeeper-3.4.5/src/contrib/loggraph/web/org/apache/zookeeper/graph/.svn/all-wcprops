@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/web/org/apache/zookeeper/graph
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/web/org/apache/zookeeper/graph/log4j.properties
+END

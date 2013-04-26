@@ -1,0 +1,22 @@
+Test Name,Number of Bytes,Execution Time,Rate(MB/s)
+File Write Performance,10000000,146,69.0
+File Write Performance,50000000,202,248.0
+File Write Performance,100000000,341,294.0
+File Write Performance,150000000,530,284.0
+File Write Performance,200000000,582,344.0
+File Write Performance,250000000,734,341.0
+File Write Performance,300000000,922,326.0
+File Write Performance,350000000,1119,313.0
+File Write Performance,400000000,1168,343.0
+File Write Performance,450000000,1350,334.0
+File Write Performance,500000000,1463,342.0
+File Write Performance,550000000,1595,345.0
+File Write Performance,600000000,1717,350.0
+File Write Performance,650000000,1856,351.0
+File Write Performance,700000000,2040,344.0
+File Write Performance,750000000,2280,329.0
+File Write Performance,800000000,2402,334.0
+File Write Performance,850000000,2514,339.0
+File Write Performance,900000000,2652,340.0
+File Write Performance,950000000,2794,341.0
+File Write Performance,1000000000,3080,325.0

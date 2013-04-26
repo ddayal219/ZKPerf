@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/conf/keys
+END
+rest.cer
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/conf/keys/rest.cer
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/conf/keys/README
+END
+rest.jks
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/conf/keys/rest.jks
+END

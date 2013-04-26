@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/README.txt
+END
+hostgroups.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/hostgroups.cfg
+END
+Screenshot-1.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/Screenshot-1.png
+END
+Screenshot.png
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/Screenshot.png
+END
+services.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/services.cfg
+END
+zookeeper.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/nagios/zookeeper.cfg
+END

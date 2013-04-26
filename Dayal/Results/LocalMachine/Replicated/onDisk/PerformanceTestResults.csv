@@ -1,0 +1,12 @@
+Test Name,Configuration Name,Server Version,Number Of ZK Instances in Ensemble,Number of Znodes,Execution Time(s),Rate(Znodes/s)
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,1,0.026,39
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,3,0.028,108
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,10,0.086,117
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,31,0.223,140
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,100,0.72,139
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,316,2.284,139
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,1000,6.329,159
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,3162,18.357,173
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,10000,54.804,183
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,31622,172.637,184
+ZK Performance Test- OnDisk,On Disk 256 GiO SSD LocalMachine,Zookeeper 3.4.5,3,100000,608.295,165

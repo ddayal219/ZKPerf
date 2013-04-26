@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/README.txt
+END
+zkServer.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkServer.cmd
+END
+zkCli.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkCli.cmd
+END
+zkEnv.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkEnv.cmd
+END
+zkServer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkServer.sh
+END
+zkCleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkCleanup.sh
+END
+zkCli.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkCli.sh
+END
+zkEnv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/bin/zkEnv.sh
+END

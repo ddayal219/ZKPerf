@@ -1,0 +1,113 @@
+Index: src/java/main/org/apache/zookeeper/server/ServerConfig.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/ServerConfig.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/ServerConfig.java	(working copy)
+@@ -44,6 +44,8 @@
+     protected int minSessionTimeout = -1;
+     /** defaults to -1 if not set explicitly */
+     protected int maxSessionTimeout = -1;
++    protected long PurgeTime = 60000; 
++    /** Default purge Time in Millis*/
+ 
+     /**
+      * Parse arguments for server configuration
+@@ -95,6 +97,7 @@
+       maxClientCnxns = config.getMaxClientCnxns();
+       minSessionTimeout = config.getMinSessionTimeout();
+       maxSessionTimeout = config.getMaxSessionTimeout();
++      PurgeTime=config.getPurgeTime();
+     }
+ 
+     public InetSocketAddress getClientPortAddress() {
+     /**
+Index: src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java	(revision 0)
++++ src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java	(revision 0)
+@@ -0,0 +1,29 @@
++package org.apache.zookeeper.server.persistence;
++
++import org.apache.zookeeper.server.PurgeTxnLog;
++import org.apache.zookeeper.server.persistence.FileTxnSnapLog;
++import org.apache.zookeeper.server.quorum.QuorumPeer;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++
++import java.util.concurrent.*;
++
++
++public class DisklessPurgeSnapshot implements Runnable {
++	private static final Logger LOG = LoggerFactory.getLogger(DisklessPurgeSnapshot.class);
++public void run()
++{
++while(true)
++{
++	try
++	{
++	PurgeTxnLog.purge(FileTxnSnapLog.ssnapLog,FileTxnSnapLog.ssnapLog, 3);
++	Thread.sleep(60000);
++	}
++	catch(Exception e)
++	{
++		LOG.error(e.toString());
++	}
++}
++}
++}
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java	(working copy)
+@@ -64,6 +64,7 @@
+     protected final HashMap<Long,QuorumServer> observers =
+         new HashMap<Long, QuorumServer>();
+ 
++    protected long PurgeTime=60000; /* Default Purge Time */
+     protected long serverId;
+     protected HashMap<Long, Long> serverWeight = new HashMap<Long, Long>();
+     protected HashMap<Long, Long> serverGroup = new HashMap<Long, Long>();
+@@ -157,7 +158,10 @@
+                 syncLimit = Integer.parseInt(value);
+             } else if (key.equals("electionAlg")) {
+                 electionAlg = Integer.parseInt(value);
+-            } else if (key.equals("peerType")) {
++            } else if (key.equals("PurgeTime")) {
++            	PurgeTime = Integer.parseInt(value);
++            }
++            else if (key.equals("peerType")) {
+                 if (value.toLowerCase().equals("observer")) {
+                     peerType = LearnerType.OBSERVER;
+                 } else if (value.toLowerCase().equals("participant")) {
+@@ -373,6 +377,7 @@
+     }
+ 
+     public InetSocketAddress getClientPortAddress() { return clientPortAddress; }
++    public long getPurgeTime() { return PurgeTime; }
+     public String getDataDir() { return dataDir; }
+     public String getDataLogDir() { return dataLogDir; }
+     public int getTickTime() { return tickTime; }
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java	(working copy)
+@@ -29,6 +29,7 @@
+ import org.apache.zookeeper.server.ZKDatabase;
+ import org.apache.zookeeper.server.DatadirCleanupManager;
+ import org.apache.zookeeper.server.ZooKeeperServerMain;
++import org.apache.zookeeper.server.persistence.DisklessPurgeSnapshot;
+ import org.apache.zookeeper.server.persistence.FileTxnSnapLog;
+ import org.apache.zookeeper.server.quorum.QuorumPeerConfig.ConfigException;
+ 
+@@ -147,8 +148,10 @@
+           quorumPeer.setCnxnFactory(cnxnFactory);
+           quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));
+           quorumPeer.setLearnerType(config.getPeerType());
+-  
++          Runnable p = new DisklessPurgeSnapshot();
++          Thread PurgeSnap=new Thread(p);
+           quorumPeer.start();
++          PurgeSnap.start();
+           quorumPeer.join();
+       } catch (InterruptedException e) {
+           // warn, but generally this is ok
+

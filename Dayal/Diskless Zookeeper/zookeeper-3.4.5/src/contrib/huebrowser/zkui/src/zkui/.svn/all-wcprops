@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/forms.py
+END
+rest.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/rest.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/views.py
+END
+stats.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/stats.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/settings.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/utils.py
+END
+windmilltests.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/windmilltests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/models.py
+END

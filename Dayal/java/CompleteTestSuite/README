@@ -1,0 +1,15 @@
+Usage:
+
+./testSuite.sh <ServerIP:Port> <Maximum number of Nodes> <Log Location(Disk,RamDisk,AWS EBS> <SnapCount(Default,0)> <Machine(LocalMachine, AWS)> <ZookeeperVersion(Zookeeper-x.y.z)> <Number of Instances in Ensemble>
+
+eg:
+
+./testSuite.sh 127.0.0.1:2184 1000 Disk 10000 LocalMachine Zookeeper-3.4.5 1
+
+
+Results:
+
+PerformanceTestResults.csv
+
+Modify the Command line arguments to different parameters and check the Results.
+

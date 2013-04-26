@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python
+END
+demo_queue.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/demo_queue.py
+END
+zk_dump_tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/zk_dump_tree.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/test.py
+END
+demo_master_election.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/demo_master_election.py
+END
+zkrest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/zkrest.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/rest/src/python/README.txt
+END

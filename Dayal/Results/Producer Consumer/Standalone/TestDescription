@@ -1,0 +1,20 @@
+Test Name:
+
+ZK Performance Test - Producer/Consumer
+
+Test Description:
+
+1. Producer Creates Zookeeper nodes with 280 bytes of data and puts it
+   into a blocked queue.
+2. The Consumer keeps polling on the queue for any available node, as a
+   node is enqueued into the queue, the consumer process reads the data from 
+   the ZK node and deletes the ZK node.
+
+Precisely,
+
+Producer Performes Create operation and Consumer performes Get+Delete operation.
+
+The throughput in the Test Results file is the combined throughput of Create+Get+Delete.
+
+
+

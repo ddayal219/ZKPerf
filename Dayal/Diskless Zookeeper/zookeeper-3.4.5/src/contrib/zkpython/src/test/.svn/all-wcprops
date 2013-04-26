@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test
+END
+async_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/async_test.py
+END
+zkServer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/zkServer.sh
+END
+acl_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/acl_test.py
+END
+connection_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/connection_test.py
+END
+exists_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/exists_test.py
+END
+zktestbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/zktestbase.py
+END
+delete_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/delete_test.py
+END
+create_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/create_test.py
+END
+run_tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/run_tests.sh
+END
+get_set_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/get_set_test.py
+END
+clientid_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/clientid_test.py
+END
+close_deadlock_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/close_deadlock_test.py
+END
+callback_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkpython/src/test/callback_test.py
+END

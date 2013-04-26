@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src
+END
+event.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/event.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/log.h
+END
+mutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/mutex.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/Makefile.am
+END
+zkadapter.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/zkadapter.cc
+END
+doxygen.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/doxygen.cfg
+END
+thread.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/thread.cc
+END
+zkadapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/zkadapter.h
+END
+zkfuse.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/zkfuse.cc
+END
+thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/thread.h
+END
+blockingqueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/blockingqueue.h
+END
+log4cxx.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/log4cxx.properties
+END
+event.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/event.cc
+END
+log.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkfuse/src/log.cc
+END

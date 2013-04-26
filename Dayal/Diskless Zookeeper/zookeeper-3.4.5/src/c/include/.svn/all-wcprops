@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/proto.h
+END
+winconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/winconfig.h
+END
+winstdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/winstdint.h
+END
+zookeeper.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/zookeeper.h
+END
+zookeeper_log.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/zookeeper_log.h
+END
+recordio.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/recordio.h
+END
+zookeeper_version.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/include/zookeeper_version.h
+END

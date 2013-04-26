@@ -1,0 +1,311 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.io.*;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.nio.ByteBuffer;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
+import org.apache.zookeeper.AsyncCallback;
+import org.apache.zookeeper.CreateMode;
+import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.WatchedEvent;
+import org.apache.zookeeper.Watcher;
+import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.ZooDefs.Ids;
+import org.apache.zookeeper.data.Stat;
+import org.apache.zookeeper.AsyncCallback.DataCallback;
+import org.apache.zookeeper.AsyncCallback.ChildrenCallback;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.CountDownLatch;
+import java.util.Collections;
+public class aSyncPrimitive1 implements Watcher {
+
+    static ZooKeeper zk = null;
+    static Integer mutex;
+    String root;
+   static Queue q1;
+    aSyncPrimitive1(String address) {
+        if (zk == null) {
+            try {
+                System.out.println("Starting ZK:");
+                zk = new ZooKeeper(address, 3000, this);
+                mutex = new Integer(-1);
+                System.out.println("Finished starting ZK: " + zk);
+            } catch (IOException e) {
+                System.out.println(e.toString());
+                zk = null;
+            }
+        }
+        //else mutex = new Integer(-1);
+    }
+
+    synchronized public void process(WatchedEvent event) {
+        synchronized (mutex) {
+            System.out.println("Process: " + event.getType());
+      /*      List<String> Children1=Queue.list;
+                      System.out.println(Queue.list.get(0));
+                      System.out.println(Queue.list.size());
+                         try
+                         {
+                             for(int i=0;i<Queue.list.size();i++)
+                             {
+                                 
+                                 System.out.println(Queue.list);
+         //   int r=0;
+           q1.consume(0, Queue.list);
+                             
+                          //   System.out.println(r);
+                             }                   
+                         }catch(Exception e){System.out.println(e);}*/
+            mutex.notify();
+        }
+    }
+
+    /**
+     * Producer-Consumer queue
+     */
+    static public class Queue extends aSyncPrimitive1 {
+
+        /**
+         * Constructor of producer-consumer queue
+         *
+         * @param address
+         * @param name
+         */
+        final AtomicInteger counter = new AtomicInteger(0);
+        public static final AtomicInteger gcChildren = new AtomicInteger(0);
+        String element = "";
+        public static int cSize, cSizeCopy;
+        int incVal = 1;
+        public static List<String> list;
+        final AtomicInteger getChildrenCounter = new AtomicInteger(0);
+      
+        Queue(String address, String name) {
+            super(address);
+            this.root = name;
+            // Create ZK node name
+            if (zk != null) {
+                try {
+                    Stat s = zk.exists(root, false);
+                    if (s == null) {
+                        zk.create(root, new byte[0], Ids.OPEN_ACL_UNSAFE,
+                                CreateMode.PERSISTENT);
+                    }
+                } catch (KeeperException e) {
+                    System.out
+                            .println("Keeper exception when instantiating queue: "
+                            + e.toString());
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted exception");
+                }
+            }
+        }
+
+        /**
+         * Add element to the queue.
+         *
+         * @param i
+         * @return
+         */
+        boolean produce(int i) throws KeeperException, InterruptedException {
+            ByteBuffer b = ByteBuffer.allocate(4);
+            byte[] value;
+
+            // Add child with value i
+            b.putInt(i);
+            value = b.array();
+            zk.create(this.root + "/element", value, Ids.OPEN_ACL_UNSAFE,
+                    CreateMode.PERSISTENT_SEQUENTIAL, new AsyncCallback.StringCallback() {
+                public void processResult(int k, String s, Object o, String s1) {
+                  //  latch.countDown();
+                }
+
+            }, null);
+	
+            //System.out.println("produced"+znode);
+            return true;
+        }
+
+
+        /*
+         * Remove first element from the queue.
+         *
+         * @return
+         * @throws KeeperException
+         * @throws InterruptedException
+         */
+         int consume(int k, List<String> Children) throws KeeperException, InterruptedException {
+            int retvalue = -1;
+            Stat stat = null;
+            String element = "";
+            final AtomicInteger count=new AtomicInteger(0);
+       
+            while (true) {
+	
+                 
+                        List<String> list = Children;
+              
+element=Collections.min(list);
+//System.out.println(element);
+
+                    if (list.size() == 0) {
+                        System.out.println("Going to wait");
+                        mutex.wait();
+                    } else {
+                    /*    int fulllength = list.get(0).length();
+                        Integer min = new Integer(list.get(0).substring(7, fulllength));
+                        element = list.get(0);
+                        
+                        for (String s : list) {
+                            Integer tempValue = new Integer(s.substring(7, fulllength));
+                           
+                            if (tempValue < min) {
+                                min = tempValue; 
+                                element = s;
+                         
+                            }
+                        }*/
+                        Queue.list.remove(element);
+long start=System.currentTimeMillis();
+final AtomicInteger counter=new AtomicInteger(0);
+		zk.getData(root + "/"+element,false,
+              new AsyncCallback.DataCallback() {
+          public void processResult(int k, String s, Object o, byte[] b,Stat t) {
+            counter.incrementAndGet();
+          }
+        }
+        , null);
+
+                   
+                       
+            final CountDownLatch latch =new CountDownLatch(1);
+                        zk.delete(root + "/"+element, -1, new AsyncCallback.VoidCallback() {
+          public void processResult(int k, String s, Object o) {
+            latch.countDown();
+          }
+        }
+        , null); 
+                  //      latch.await();
+        long end=System.currentTimeMillis();
+long diff=end-start;
+                        return 1;
+              
+                }
+            }
+        }
+    }
+   
+    public static void main(String args[]) throws Exception {
+
+        queueTest(args);
+
+    }
+    
+
+    public static void queueTest(String args[]) throws Exception {
+        final Queue q = new Queue(args[0], "/app1");
+            aSyncPrimitive1.q1=q;
+	double cdiffInSeconds1=0.0;
+        //System.out.println("Input: " + args[0]);
+        long k, i = 0;
+        Integer max = new Integer(10000);
+        long start = 0, end = 0, diff = 0;
+        double diffInSeconds = 0.0, j = 0.0;
+        long LoopDelimiter = Integer.parseInt(args[1]), exponentBase = 10;
+
+        long cdiff=0;
+         String LogLocation, LogLocConfig, SnapCount = "", Machine, ServerVersion, NOI = "1";
+        FileWriter fstream;
+	
+LogLocation=args[2];
+	SnapCount=args[3];
+	Machine=args[4];
+	ServerVersion=args[5];
+	NOI=args[6];
+	 fstream = new FileWriter("PerformanceTestResults-MQ.csv",true);
+        BufferedWriter csv = new BufferedWriter(fstream);
+	
+csv.append("\n");
+        System.out.println("Message Passing queue using zookeeper");
+        System.out.println("Number of Nodes---Time in Seconds---Through(ZKnodes/s)");
+        for (i = 1; i <= LoopDelimiter; i = (long) (Math.pow(exponentBase, j / 2))) {
+
+            start = System.currentTimeMillis();
+         cdiff=0;
+         
+            if ("p".equals("p")) {
+                final AtomicInteger gCounter = new AtomicInteger(0);
+                for (k = 0; k < i; k++) {
+            
+                  
+                    try {
+
+                        int h = (int) k;
+                        q.produce(10 + h);
+  gCounter.incrementAndGet();
+                    } catch (KeeperException e) {
+                    } catch (InterruptedException e) {
+                    }
+                }
+ while (gCounter.get() != i) {
+      Thread.sleep(1);
+    } 
+                 final CountDownLatch latch = new CountDownLatch(1);
+	long Starting=System.currentTimeMillis();
+       
+                   zk.getChildren("/app1", false, new AsyncCallback.ChildrenCallback() {
+                        public void processResult(int k, String s, Object o, List<String> Children) {
+                                
+                          
+                            Queue.list = Children;
+                        latch.countDown();
+     
+                        }
+                    }, null); 
+ 
+	
+                    System.out.println("Going to await on latch");
+                   latch.await();
+long gcdiff=	
+System.out.println("wait over");
+
+     int limit=Queue.list.size();
+System.out.println(Queue.list.get(0));
+System.out.println("limit"+limit);
+System.out.println(Queue.list.get(limit-1));
+long cstart=System.currentTimeMillis();
+             for(int m=0;m<limit;m++)
+             {
+                // System.out.println(Queue.list.size());
+                 q.consume(max,Queue.list);
+             }
+ long cend=System.currentTimeMillis();
+
+cdiff=cstart-cend;
+cdiffInSeconds1=((double)cdiff)/1000;
+            } else {
+                
+            }
+
+            end = System.currentTimeMillis();
+            diff = end - start;
+            double cdiffInSeconds=((double)cdiff)/1000;
+            diffInSeconds = ((double) diff) / 1000;
+            csv.append("ZK Performance Test-MQ," + LogLocation + "," + SnapCount + "," + Machine + "," + ServerVersion + ",Create," + NOI + "," + i + ",1," + i + "," + (diffInSeconds) + "," + Math.ceil((double) i / (diffInSeconds)));
+          //  System.out.println(i + "\t\t    " + (diffInSeconds) + "\t\t" + Math.ceil((double) i / (diffInSeconds))+"\t\t"+Math.ceil((double) i/(diffInSeconds1)));
+            csv.append("\n");
+            //System.out.println("Time difference"+diffInSeconds);
+            System.out.println(i + "\t\t" + diffInSeconds + "\t\t"+ cdiffInSeconds1 + "\t\t" + Math.ceil((double) i / (diffInSeconds)));
+            j++;
+        }
+        csv.close();
+        System.out.println("end");
+    }
+}
+

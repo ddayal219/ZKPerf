@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/server/quorum
+END
+LearnerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/server/quorum/LearnerTest.java
+END
+QuorumPeerMainTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerMainTest.java
+END
+Zab1_0Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/server/quorum/Zab1_0Test.java
+END
+QuorumPeerTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/test/org/apache/zookeeper/server/quorum/QuorumPeerTestBase.java
+END

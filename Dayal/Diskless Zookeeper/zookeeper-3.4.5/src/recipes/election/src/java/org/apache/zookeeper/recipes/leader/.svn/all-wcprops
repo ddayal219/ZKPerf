@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader
+END
+LeaderOffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderOffer.java
+END
+LeaderElectionAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderElectionAware.java
+END
+LeaderElectionSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/recipes/election/src/java/org/apache/zookeeper/recipes/leader/LeaderElectionSupport.java
+END

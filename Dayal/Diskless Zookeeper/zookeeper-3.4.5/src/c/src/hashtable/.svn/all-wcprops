@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable
+END
+hashtable_itr.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/hashtable_itr.c
+END
+hashtable_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/hashtable_private.h
+END
+hashtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/hashtable.c
+END
+hashtable_itr.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/hashtable_itr.h
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/LICENSE.txt
+END
+hashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/hashtable/hashtable.h
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops
+END
+NotOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/NotOp.java
+END
+OrOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/OrOp.java
+END
+SymbolArg.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/SymbolArg.java
+END
+LessThanOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/LessThanOp.java
+END
+StringArg.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/StringArg.java
+END
+AndOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/AndOp.java
+END
+NumberArg.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/NumberArg.java
+END
+GreaterThanOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/GreaterThanOp.java
+END
+XorOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/XorOp.java
+END
+Arg.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/Arg.java
+END
+EqualsOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/src/java/org/apache/zookeeper/graph/filterops/EqualsOp.java
+END

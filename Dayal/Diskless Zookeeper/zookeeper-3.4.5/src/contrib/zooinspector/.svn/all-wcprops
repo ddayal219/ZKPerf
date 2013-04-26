@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector
+END
+zooInspector.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/zooInspector.cmd
+END
+zooInspector-dev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/zooInspector-dev.sh
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/ivy.xml
+END
+zooInspector.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/zooInspector.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/README.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/build.xml
+END
+NOTICE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/NOTICE.txt
+END

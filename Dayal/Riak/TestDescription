@@ -1,0 +1,12 @@
+Raik Performance Test
+
+The focus of this test is to measure the Write and Read performance of Key-Value pairs in Riak.
+
+Different - Configruations used:
+
+1. The backend storage of Riak is Varied and the Performance is measured. Different Backend storage used are: 
+	1.1 bitcask
+	1.2 eleveldb
+	1.3 Memory (erlang ETS tables)
+
+2. The Requesting client interface is also modified and the performance is measure. HTTP and Protocol Buffers are the two Client Interfaces used in the testing.

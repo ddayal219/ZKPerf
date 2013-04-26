@@ -1,0 +1,18 @@
+diff --git a/Dayal/java/FileTxnLog.java b/Dayal/java/FileTxnLog.java
+index d7c013f..df02e7b 100644
+--- a/Dayal/java/FileTxnLog.java
++++ b/Dayal/java/FileTxnLog.java
+@@ -188,6 +188,13 @@ public class FileTxnLog implements TxnLog {
+     public synchronized boolean append(TxnHeader hdr, Record txn)
+         throws IOException
+     {
++	int logPurgeFlag=0;
++	/**
++	 returns true everytime, thus preventing the execution of the remaining part of the code
++	 thereby preventing writing of logs on to Disk. Everytime, the method returns true the 
++	 snapCount is incremented. When it reaches 10,000 a snapshot is taken. */ 
++	if(logPurgeFlag==0)
++	    return true;
+     	if (hdr != null) {
+             if (hdr.getZxid() <= lastZxidSeen) {
+                 LOG.warn("Current zxid " + hdr.getZxid()

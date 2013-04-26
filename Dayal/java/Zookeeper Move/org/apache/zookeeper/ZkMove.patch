@@ -1,0 +1,51 @@
+diff --git a/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeper.java b/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeper.java
+index 97a9d3d..3417f80 100644
+--- a/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeper.java	
++++ b/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeper.java	
+@@ -153,7 +153,7 @@ public class ZooKeeper {
+                                         String clientPath)
+         {
+             Set<Watcher> result = new HashSet<Watcher>();
+-
++            
+             switch (type) {
+             case None:
+                 result.add(defaultWatcher);
+@@ -1781,5 +1781,11 @@ public class ZooKeeper {
+             throw ioe;
+         }
+     }
++    public Stat move(final String source,final String dest, boolean watcher, Stat stat) throws KeeperException,InterruptedException
++    {
++    String moveData=new String(getData(source,watcher,stat)); 
++    delete(source,-1);
++    return setData(dest,moveData.getBytes(),-1);
++    }
+ }
+ 
+diff --git a/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeperMain.java b/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeperMain.java
+index f50aba2..859eaa6 100644
+--- a/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeperMain.java	
++++ b/Dayal/java/Zookeeper Move/org/apache/zookeeper/ZooKeeperMain.java	
+@@ -70,6 +70,7 @@ public class ZooKeeperMain {
+         commandMap.put("rmr","path");
+         commandMap.put("set","path data [version]");
+         commandMap.put("get","path [watch]");
++        commandMap.put("move","sourcePath destPath [watch] stat");
+         commandMap.put("ls","path [watch]");
+         commandMap.put("ls2","path [watch]");
+         commandMap.put("getAcl","path");
+@@ -815,7 +816,12 @@ public class ZooKeeperMain {
+                 b = args[2].getBytes();
+ 
+             zk.addAuthInfo(args[1], b);
+-        } else {
++        }
++        else if (cmd.equals("move"))
++        {
++        	zk.move(args[1],args[2],watch,stat);
++        }
++        else {
+             usage();
+         }
+         return watch;

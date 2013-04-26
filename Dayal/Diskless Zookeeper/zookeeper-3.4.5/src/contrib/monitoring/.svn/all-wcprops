@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring
+END
+JMX-RESOURCES
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/JMX-RESOURCES
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/test.py
+END
+check_zookeeper.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/check_zookeeper.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/monitoring/README
+END

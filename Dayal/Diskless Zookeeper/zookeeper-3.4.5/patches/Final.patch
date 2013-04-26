@@ -1,0 +1,489 @@
+Index: conf/zoo_sample.cfg
+===================================================================
+--- conf/zoo_sample.cfg	(revision 1459445)
++++ conf/zoo_sample.cfg	(working copy)
+@@ -9,9 +9,12 @@
+ # the directory where the snapshot is stored.
+ # do not use /tmp for storage, /tmp here is just 
+ # example sakes.
+-dataDir=/tmp/zookeeper
++#dataLogDir=/var/lzookeeper-3.4.53
++dataDir=/tmp/zookeeper3
++PurgeTime=10000
+ # the port at which the clients will connect
+-clientPort=2181
++clientPort=2188
++globalOutstandingLimit=1000
+ #
+ # Be sure to read the maintenance section of the 
+ # administrator guide before turning on autopurge.
+@@ -23,3 +26,6 @@
+ # Purge task interval in hours
+ # Set to "0" to disable auto purge feature
+ #autopurge.purgeInterval=1
++server.1=localhost:2888:3888
++server.2=localhost:2889:3889
++server.3=localhost:2890:3890 
+\ No newline at end of file
+Index: src/java/main/org/apache/zookeeper/server/ServerConfig.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/ServerConfig.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/ServerConfig.java	(working copy)
+@@ -44,6 +44,8 @@
+     protected int minSessionTimeout = -1;
+     /** defaults to -1 if not set explicitly */
+     protected int maxSessionTimeout = -1;
++    protected long PurgeTime = 60000; 
++    /** Default purge Time in Millis*/
+ 
+     /**
+      * Parse arguments for server configuration
+@@ -95,6 +97,7 @@
+       maxClientCnxns = config.getMaxClientCnxns();
+       minSessionTimeout = config.getMinSessionTimeout();
+       maxSessionTimeout = config.getMaxSessionTimeout();
++      PurgeTime=config.getPurgeTime();
+     }
+ 
+     public InetSocketAddress getClientPortAddress() {
+Index: src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/persistence/FileTxnLog.java	(working copy)
+@@ -188,44 +188,16 @@
+     public synchronized boolean append(TxnHeader hdr, Record txn)
+         throws IOException
+     {
+-        if (hdr != null) {
+-            if (hdr.getZxid() <= lastZxidSeen) {
+-                LOG.warn("Current zxid " + hdr.getZxid()
+-                        + " is <= " + lastZxidSeen + " for "
+-                        + hdr.getType());
+-            }
+-            if (logStream==null) {
+-               if(LOG.isInfoEnabled()){
+-                    LOG.info("Creating new log file: log." +  
+-                            Long.toHexString(hdr.getZxid()));
+-               }
+-               
+-               logFileWrite = new File(logDir, ("log." + 
+-                       Long.toHexString(hdr.getZxid())));
+-               fos = new FileOutputStream(logFileWrite);
+-               logStream=new BufferedOutputStream(fos);
+-               oa = BinaryOutputArchive.getArchive(logStream);
+-               FileHeader fhdr = new FileHeader(TXNLOG_MAGIC,VERSION, dbId);
+-               fhdr.serialize(oa, "fileheader");
+-               // Make sure that the magic number is written before padding.
+-               logStream.flush();
+-               currentSize = fos.getChannel().position();
+-               streamsToFlush.add(fos);
+-            }
+-            padFile(fos);
+-            byte[] buf = Util.marshallTxnEntry(hdr, txn);
+-            if (buf == null || buf.length == 0) {
+-                throw new IOException("Faulty serialization for header " +
+-                        "and txn");
+-            }
+-            Checksum crc = makeChecksumAlgorithm();
+-            crc.update(buf, 0, buf.length);
+-            oa.writeLong(crc.getValue(), "txnEntryCRC");
+-            Util.writeTxnBytes(oa, buf);
+-            
+-            return true;
+-        }
+-        return false;
++    	if(hdr==null)
++    	{
++    		//System.out.println("Returning False");
++    		return true;
++    	}
++    		else
++    		{
++    			//System.out.println("Returning True");
++    			return true; 
++    		}
+     }
+ 
+     /**
+Index: src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/persistence/FileTxnSnapLog.java	(working copy)
+@@ -53,6 +53,7 @@
+     private final File snapDir;
+     private TxnLog txnLog;
+     private SnapShot snapLog;
++   public static File ssnapLog;
+     public final static int VERSION = 2;
+     public final static String version = "version-";
+     
+@@ -80,6 +81,7 @@
+ 
+         this.dataDir = new File(dataDir, version + VERSION);
+         this.snapDir = new File(snapDir, version + VERSION);
++        ssnapLog=snapDir;
+         if (!this.dataDir.exists()) {
+             if (!this.dataDir.mkdirs()) {
+                 throw new IOException("Unable to create data directory "
+@@ -94,6 +96,7 @@
+         }
+         txnLog = new FileTxnLog(this.dataDir);
+         snapLog = new FileSnap(this.snapDir);
++       
+     }
+     
+     /**
+@@ -235,8 +238,9 @@
+     public void save(DataTree dataTree,
+             ConcurrentHashMap<Long, Integer> sessionsWithTimeouts)
+         throws IOException {
+-        long lastZxid = dataTree.lastProcessedZxid;
+-        File snapshotFile = new File(snapDir, Util.makeSnapshotName(lastZxid));
++    	long lastZxid = dataTree.lastProcessedZxid;
++    //	System.out.println("taking snapshot with lastZxid: "+lastZxid);
++    	File snapshotFile = new File(snapDir, Util.makeSnapshotName(lastZxid));
+         LOG.info("Snapshotting: 0x{} to {}", Long.toHexString(lastZxid),
+                 snapshotFile);
+         snapLog.serialize(dataTree, sessionsWithTimeouts, snapshotFile);
+Index: src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java	(revision 0)
++++ src/java/main/org/apache/zookeeper/server/persistence/DisklessPurgeSnapshot.java	(revision 0)
+@@ -0,0 +1,29 @@
++package org.apache.zookeeper.server.persistence;
++
++import org.apache.zookeeper.server.PurgeTxnLog;
++import org.apache.zookeeper.server.persistence.FileTxnSnapLog;
++import org.apache.zookeeper.server.quorum.QuorumPeer;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++
++import java.util.concurrent.*;
++
++
++public class DisklessPurgeSnapshot implements Runnable {
++	private static final Logger LOG = LoggerFactory.getLogger(DisklessPurgeSnapshot.class);
++public void run()
++{
++while(true)
++{
++	try
++	{
++	PurgeTxnLog.purge(FileTxnSnapLog.ssnapLog,FileTxnSnapLog.ssnapLog, 3);
++	Thread.sleep(60000);
++	}
++	catch(Exception e)
++	{
++		LOG.error(e.toString());
++	}
++}
++}
++}
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java	(working copy)
+@@ -82,7 +82,9 @@
+     LocalPeerBean jmxLocalPeerBean;
+     LeaderElectionBean jmxLeaderElectionBean;
+     QuorumCnxManager qcm;
+-
++    
++    
++    
+     /* ZKDatabase is a top level member of quorumpeer 
+      * which will be used in all the zookeeperservers
+      * instantiated later. Also, it is created once on 
+@@ -90,7 +92,8 @@
+      * message from the leader
+      */
+     private ZKDatabase zkDb;
+-
++    private ZooKeeperServer zks;
++    
+     public static class QuorumServer {
+         public QuorumServer(long id, InetSocketAddress addr,
+                 InetSocketAddress electionAddr) {
+@@ -134,6 +137,7 @@
+      * We need this distinction to decide which ServerState to move to when 
+      * conditions change (e.g. which state to become after LOOKING). 
+      */
++    
+     public enum LearnerType {
+         PARTICIPANT, OBSERVER;
+     }
+@@ -407,8 +411,11 @@
+     @Override
+     public synchronized void start() {
+         loadDataBase();
+-        cnxnFactory.start();        
++        cnxnFactory.start();    
++        long start=System.currentTimeMillis();
++        System.out.println("Start: "+start);
+         startLeaderElection();
++        System.out.println("Time taken for starting Leader Election:"+(System.currentTimeMillis()-start));
+         super.start();
+     }
+ 
+@@ -573,20 +580,29 @@
+         //TODO: use a factory rather than a switch
+         switch (electionAlgorithm) {
+         case 0:
++        	long start=System.currentTimeMillis();
+             le = new LeaderElection(this);
++            System.out.println("Time taken for Leader Election: "+(System.currentTimeMillis()-start));
+             break;
+         case 1:
++         	long start1=System.currentTimeMillis();
+             le = new AuthFastLeaderElection(this);
++            System.out.println("Time taken for Auth Leader Election: "+(System.currentTimeMillis()-start1));
+             break;
+         case 2:
++        	long start2=System.currentTimeMillis();
+             le = new AuthFastLeaderElection(this, true);
++            System.out.println("Time taken for Auth Fast Leader Election: "+(System.currentTimeMillis()-start2));
+             break;
+         case 3:
+             qcm = new QuorumCnxManager(this);
+             QuorumCnxManager.Listener listener = qcm.listener;
+             if(listener != null){
+                 listener.start();
++                long start3=System.currentTimeMillis();
+                 le = new FastLeaderElection(this, qcm);
++                System.out.println("Time taken for Fast Leader Election: "+(System.currentTimeMillis()-start3));
++                
+             } else {
+                 LOG.error("Null listener when initializing cnx manager");
+             }
+@@ -631,7 +647,7 @@
+     public void run() {
+         setName("QuorumPeer" + "[myid=" + getId() + "]" +
+                 cnxnFactory.getLocalAddress());
+-
++        long tstart=0;
+         LOG.debug("Starting quorum peer");
+         try {
+             jmxQuorumBean = new QuorumBean(this);
+@@ -701,7 +717,9 @@
+                         };
+                         try {
+                             roZkMgr.start();
++                            long start=System.currentTimeMillis();
+                             setCurrentVote(makeLEStrategy().lookForLeader());
++                            System.out.println("setCurrentVote in if Time:"+(System.currentTimeMillis()-start));
+                         } catch (Exception e) {
+                             LOG.warn("Unexpected exception",e);
+                             setPeerState(ServerState.LOOKING);
+@@ -713,7 +731,10 @@
+                         }
+                     } else {
+                         try {
++                            long start=System.currentTimeMillis();
++                            System.out.println("Start in set Current Vote:"+start);
+                             setCurrentVote(makeLEStrategy().lookForLeader());
++                            System.out.println("setCurrentVote in else Time:"+(System.currentTimeMillis()-start));
+                         } catch (Exception e) {
+                             LOG.warn("Unexpected exception", e);
+                             setPeerState(ServerState.LOOKING);
+@@ -737,10 +758,24 @@
+                     try {
+                         LOG.info("FOLLOWING");
+                         setFollower(makeFollower(logFactory));
++                        System.out.println("Followers started");
+                         follower.followLeader();
+                     } catch (Exception e) {
+                         LOG.warn("Unexpected exception",e);
+-                    } finally {
++                    } finally { //take snapshot here; start time for taking snapshot 
++                    	tstart=System.currentTimeMillis();
++                     try {
++                    	  long start=System.currentTimeMillis();
++                    	  System.out.println("Start Time in Snapshotting: "+start);
++                    	  logFactory.save(this.zkDb.getDataTree(),this.zkDb.getSessionWithTimeOuts());
++                    	  System.out.println("Time Taken for snapshotting: "+(System.currentTimeMillis()-start));
++                      } catch (IOException e) {
++						//TODO Auto-generated catch block
++                    	  System.out.println("error"+e);
++						e.printStackTrace();
++					}
++                    
++                       	System.out.println("shutdown follower");
+                         follower.shutdown();
+                         setFollower(null);
+                         setPeerState(ServerState.LOOKING);
+@@ -749,13 +784,28 @@
+                 case LEADING:
+                     LOG.info("LEADING");
+                     try {
++                    	System.out.println("Leader");
+                         setLeader(makeLeader(logFactory));
++                        System.out.println("Total time:"+(System.currentTimeMillis()-tstart));
+                         leader.lead();
++                        System.out.println("After Total time:"+(System.currentTimeMillis()-tstart));
+                         setLeader(null);
+                     } catch (Exception e) {
+                         LOG.warn("Unexpected exception",e);
+-                    } finally {
+-                        if (leader != null) {
++                    } finally { //take snapshot here
++                    	System.out.println("shutdown leader");
++                    	 try {
++     						System.out.println("Taking snapshot on Leader shutdown");
++     						long start=System.currentTimeMillis();
++                    		FileTxnSnapLog txn=new FileTxnSnapLog(FileTxnSnapLog.ssnapLog,FileTxnSnapLog.ssnapLog);
++     						txn.save(this.zkDb.getDataTree(), this.zkDb.getSessionWithTimeOuts());
++     						System.out.println("Final Snapshot Time:"+(System.currentTimeMillis()-start));
++                    	 } catch (IOException e) {
++     						//TODO Auto-generated catch block
++                         	System.out.println("error"+e);
++     						e.printStackTrace();
++     					}
++                    	if (leader != null) {
+                             leader.shutdown("Forcing shutdown");
+                             setLeader(null);
+                         }
+@@ -779,6 +829,7 @@
+     public void shutdown() {
+         running = false;
+         if (leader != null) {
++        	System.out.println("Quorum Peer shutdown");
+             leader.shutdown("quorum Peer shutdown");
+         }
+         if (follower != null) {
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java	(working copy)
+@@ -64,6 +64,7 @@
+     protected final HashMap<Long,QuorumServer> observers =
+         new HashMap<Long, QuorumServer>();
+ 
++    protected long PurgeTime=60000; /* Default Purge Time */
+     protected long serverId;
+     protected HashMap<Long, Long> serverWeight = new HashMap<Long, Long>();
+     protected HashMap<Long, Long> serverGroup = new HashMap<Long, Long>();
+@@ -137,6 +138,7 @@
+             String value = entry.getValue().toString().trim();
+             if (key.equals("dataDir")) {
+                 dataDir = value;
++                System.out.println(dataDir);
+             } else if (key.equals("dataLogDir")) {
+                 dataLogDir = value;
+             } else if (key.equals("clientPort")) {
+@@ -157,7 +159,10 @@
+                 syncLimit = Integer.parseInt(value);
+             } else if (key.equals("electionAlg")) {
+                 electionAlg = Integer.parseInt(value);
+-            } else if (key.equals("peerType")) {
++            } else if (key.equals("PurgeTime")) {
++            	PurgeTime = Integer.parseInt(value);
++            }
++            else if (key.equals("peerType")) {
+                 if (value.toLowerCase().equals("observer")) {
+                     peerType = LearnerType.OBSERVER;
+                 } else if (value.toLowerCase().equals("participant")) {
+@@ -373,6 +378,7 @@
+     }
+ 
+     public InetSocketAddress getClientPortAddress() { return clientPortAddress; }
++    public long getPurgeTime() { return PurgeTime; }
+     public String getDataDir() { return dataDir; }
+     public String getDataLogDir() { return dataLogDir; }
+     public int getTickTime() { return tickTime; }
+Index: src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java	(working copy)
+@@ -504,6 +504,7 @@
+ 
+     volatile boolean stop;
+     public void shutdown(){
++    	System.out.println("Going to shutdown Zookeeper");
+         stop = true;
+         LOG.debug("Shutting down connection manager");
+         manager.halt();
+Index: src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java	(working copy)
+@@ -29,6 +29,7 @@
+ import org.apache.zookeeper.server.ZKDatabase;
+ import org.apache.zookeeper.server.DatadirCleanupManager;
+ import org.apache.zookeeper.server.ZooKeeperServerMain;
++import org.apache.zookeeper.server.persistence.DisklessPurgeSnapshot;
+ import org.apache.zookeeper.server.persistence.FileTxnSnapLog;
+ import org.apache.zookeeper.server.quorum.QuorumPeerConfig.ConfigException;
+ 
+@@ -147,8 +148,10 @@
+           quorumPeer.setCnxnFactory(cnxnFactory);
+           quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));
+           quorumPeer.setLearnerType(config.getPeerType());
+-  
++          Runnable p = new DisklessPurgeSnapshot();
++          Thread PurgeSnap=new Thread(p);
+           quorumPeer.start();
++          PurgeSnap.start();
+           quorumPeer.join();
+       } catch (InterruptedException e) {
+           // warn, but generally this is ok
+Index: src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/SyncRequestProcessor.java	(working copy)
+@@ -108,9 +108,9 @@
+                 if (si != null) {
+                     // track the number of records written to the log
+                     if (zks.getZKDatabase().append(si)) {
+-                        logCount++;
+-                        if (logCount > (snapCount / 2 + randRoll)) {
+-                            randRoll = r.nextInt(snapCount/2);
++                      //  logCount++;
++                       // if (logCount > (snapCount / 2 + randRoll)) {
++                         //   randRoll = r.nextInt(snapCount/2);
+                             // roll the log
+                             zks.getZKDatabase().rollLog();
+                             // take a snapshot
+@@ -129,7 +129,7 @@
+                                 snapInProcess.start();
+                             }
+                             logCount = 0;
+-                        }
++                        //}
+                     } else if (toFlush.isEmpty()) {
+                         // optimization for read heavy workloads
+                         // iff this is a read, and there are no pending
+Index: src/java/main/org/apache/zookeeper/server/PurgeTxnLog.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/PurgeTxnLog.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/PurgeTxnLog.java	(working copy)
+@@ -101,7 +101,7 @@
+         // remove the old files
+         for(File f: files)
+         {
+-            System.out.println("Removing file: "+
++            LOG.info("Removing file: "+
+                 DateFormat.getDateTimeInstance().format(f.lastModified())+
+                 "\t"+f.getPath());
+             if(!f.delete()){
+Index: src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java
+===================================================================
+--- src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java	(revision 1459445)
++++ src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java	(working copy)
+@@ -214,6 +214,17 @@
+                 tickTime, new BasicDataTreeBuilder());
+     }
+ 
++    public ZooKeeperServer(File snapDir, File logDir)
++    {
++   serverStats = new ServerStats(this);
++   try {
++	this.txnLogFactory=new FileTxnSnapLog(snapDir, logDir);
++} catch (IOException e) {
++	// TODO Auto-generated catch block
++	e.printStackTrace();
++}
++    }
++    
+     /**
+      * Default constructor, relies on the config for its agrument values
+      *

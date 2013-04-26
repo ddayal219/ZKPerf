@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/build.xml
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/ivy.xml
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/loggraph/README.txt
+END

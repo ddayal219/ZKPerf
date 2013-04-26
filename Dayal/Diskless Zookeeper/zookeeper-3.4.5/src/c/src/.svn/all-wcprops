@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src
+END
+cli.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/cli.c
+END
+winport.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/winport.h
+END
+load_gen.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/load_gen.c
+END
+mt_adaptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/mt_adaptor.c
+END
+zk_hashtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/zk_hashtable.c
+END
+st_adaptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/st_adaptor.c
+END
+winport.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/winport.c
+END
+zk_adaptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/zk_adaptor.h
+END
+zookeeper.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/zookeeper.c
+END
+zk_hashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/zk_hashtable.h
+END
+zk_log.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/zk_log.c
+END
+recordio.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/src/recordio.c
+END

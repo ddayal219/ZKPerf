@@ -1,0 +1,14 @@
+Test Name:
+
+ZK-LeaderElectionPerformance
+
+Description:
+
+The objective is to measure the time taken taken to elect a new Leader and restore the quorum when the current Leader fails in Zookeeper. In Diskless configuration of zookeeper, there is a snapshot taken by the followers whenever the Leader fails. Check whether this increases the time taken for the Leader Election and restoration of quorum in Diskless Zookeeper when compared to Default zookeeper.
+
+Steps to Measure:
+In QuorumPeer.java -
+1. Measure the time for snapshot taken immediately after Leader Failure
+2. Measure the time taken for the election of the new Leader.
+
+

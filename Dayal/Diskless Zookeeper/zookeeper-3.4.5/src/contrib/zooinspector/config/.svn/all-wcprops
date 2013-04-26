@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/config
+END
+defaultNodeVeiwers.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/config/defaultNodeVeiwers.cfg
+END
+defaultConnectionSettings.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/config/defaultConnectionSettings.cfg
+END

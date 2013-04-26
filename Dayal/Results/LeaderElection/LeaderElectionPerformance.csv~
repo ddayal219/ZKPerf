@@ -1,0 +1,14 @@
+TestName,ZookeeperVersion,NumberOfNodesInZookeeperState,Default Zookeper (ms),Diskless Zookeeper (ms) (Snapshot + Election Time) 
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,1,210,217
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,3,216,219
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,10,215,223
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,31,214,230
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,100,213,228
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,316,218,239
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,1000,235,260
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,3162,249,272
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,10000,232,335
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,31622,276,360
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,100000,407,656
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,316227,884,1598
+ZK-LeaderElectionPerformance,Zookeeper-3.4.5,1000000,3785,5853

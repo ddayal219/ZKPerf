@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates
+END
+clients.mako
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/clients.mako
+END
+create.mako
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/create.mako
+END
+edit.mako
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/edit.mako
+END
+index.mako
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/index.mako
+END
+view.mako
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/view.mako
+END
+shared_components.mako
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/shared_components.mako
+END
+tree.mako
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/huebrowser/zkui/src/zkui/templates/tree.mako
+END

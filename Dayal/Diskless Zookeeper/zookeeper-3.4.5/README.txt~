@@ -1,0 +1,40 @@
+Zookeeper - 3.4.5 Diskless version:
+
+Zookeeper Diskless version is a high performance version of Zookeeper-3.4.5. In this version, we removed the Disk dependency of zookeeper by removing the Transaction Logging Mechanism. We use the 
+fuzzy snapshots along with ZAB replication to provide durability during worse failure condtions(when more n servers fail out of 2n+1 operating servers). By using this method we can achieve very write performance in Zookeeper. The Write performance in this mode is approximately 30x times faster in magnitude than Default Zookeeper.
+
+Use the JAR file in /build/zookeeper-3.4.5.jar to start using Diskless Zookeeper.
+
+Major Modifications:
+
+1. There is no Transaction logging.
+
+2. One Snapshots are taken. Snapshots are taking depending upon Fuzzy snapcount, see link 6 below.
+
+3. See link 5 for Restoration Guarantee of Diskless Zookeeper.
+
+
+Precise description of the Motivation, Performance benefits, durability trade-off is documented in the following links:
+
+1. Zookeeper Performance Analysis - Persistent Vs In-memory setup http://dayald.tumblr.com/post/37362556887/zookeeper-performance-analysis-in-memory-vs
+
+2. Zookeeper Performance Analysis - Diskless Zookeeper http://dayald.tumblr.com/post/40191794000/zookeeper-performance-analysis-diskless-zookeeper
+
+3. Zookeeper Performance Analysis - Synchronous Vs Asynchronous mode http://dayald.tumblr.com/post/40191991155/zookeeper-performance-analysis-synchronous-vs
+
+4. Performance Analysis of Zookeeper as a Message Queue - http://dayald.tumblr.com/post/40192061934/article-4 
+
+5. Restoration guarnatee of Diskless Zookeeper in Replicated Mode - http://dayald.tumblr.com/post/45426756305/zookeeper-snapshot-time-measurement-and-modifications
+
+6. Zookeeper SnapTime Measurement and Modifications for Diskless Mode - http://dayald.tumblr.com/post/45426719580/restoration-guarnatee-of-diskless-zookeeper-in
+
+The Performance Benchmarks values can be found in the following links
+
+1. Default Zookeeper Write Performance - https://github.com/userevents/ZKPerf/blob/master/Dayal/Results/Async%20Results/Zookeeper-3.4.5/Replicated/forceSync/PerformanceTestResultsSync.csv
+
+2. Diskless Zookeeper Write Performance - https://github.com/userevents/ZKPerf/blob/master/Dayal/Results/Async%20Results/Zookeeper-3.4.5/Replicated/Normal%20Snapshot%20only/PerformanceTestResults.csv
+
+3. Message Queue Performance - https://github.com/userevents/ZKPerf/blob/master/Dayal/Results/Message%20Queue/Zookeeper-3.4.5/Rep-MQ.csv
+
+
+ 

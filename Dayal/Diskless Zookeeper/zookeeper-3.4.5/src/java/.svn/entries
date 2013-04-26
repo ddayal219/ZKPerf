@@ -1,0 +1,77 @@
+10
+
+dir
+1459445
+https://svn.apache.org/repos/asf/zookeeper/tags/release-3.4.5/src/java
+https://svn.apache.org/repos/asf
+
+
+
+2012-10-31T18:42:18.678233Z
+1404289
+phunt
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+systest
+dir
+
+test
+dir
+
+main
+dir
+
+lib
+dir
+
+libtest
+dir
+
+OldChangeLog
+file
+
+
+
+
+2013-03-21T18:44:40.553618Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-10-01T06:26:47.243718Z
+700690
+breed
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+

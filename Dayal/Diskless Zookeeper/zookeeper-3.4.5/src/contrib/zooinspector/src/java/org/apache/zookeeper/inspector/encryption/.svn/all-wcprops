@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/encryption
+END
+DataEncryptionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/encryption/DataEncryptionManager.java
+END
+BasicDataEncryptionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/encryption/BasicDataEncryptionManager.java
+END

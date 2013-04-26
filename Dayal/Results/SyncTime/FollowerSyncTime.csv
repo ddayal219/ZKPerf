@@ -1,0 +1,15 @@
+Test Name,ServerVersion,ZKNodes Difference,DefaultNode SyncLeader Time(ms),DisklessNode SyncLeader Time(ms)
+Zookeeper-SyncTime,Zookeeper-3.4.5,0,17,24
+Zookeeper-SyncTime,Zookeeper-3.4.5,1,35,36
+Zookeeper-SyncTime,Zookeeper-3.4.5,3,22,37
+Zookeeper-SyncTime,Zookeeper-3.4.5,10,42,42
+Zookeeper-SyncTime,Zookeeper-3.4.5,31,45,35
+Zookeeper-SyncTime,Zookeeper-3.4.5,100,53,53
+Zookeeper-SyncTime,Zookeeper-3.4.5,316,93,77
+Zookeeper-SyncTime,Zookeeper-3.4.5,1000,80,103
+Zookeeper-SyncTime,Zookeeper-3.4.5,3162,160,165
+Zookeeper-SyncTime,Zookeeper-3.4.5,10000,257,297
+Zookeeper-SyncTime,Zookeeper-3.4.5,31622,400,527
+Zookeeper-SyncTime,Zookeeper-3.4.5,100000,890,950
+Zookeeper-SyncTime,Zookeeper-3.4.5,316227,2888,2724
+Zookeeper-SyncTime,Zookeeper-3.4.5,1000000,5337,5414

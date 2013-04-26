@@ -1,0 +1,33 @@
+Test Name:
+
+Zk Performance Test - Ramdisk
+
+Description:
+
+The aim of the test is to check the performance of zookeeper with logs on Ramdisk. The procedure for using the test suite is given below.
+
+Ramdisk Configuration:
+
+Size of Ramdisk = 16 Gio
+Total Size of Ram = 32 Gio
+
+Test Suite Procedure:
+
+1. Create a tmpfs ramdisk of size 16g
+
+$mkdir /mnt/ramdisk
+
+$sudo mount -t tmpfs -o size=16g none /mnt/ramdisk
+
+2. Create a directory to store the logs in the ramdisk
+
+/mnt/ramdisk$ mkdir zookeeper3.4.5
+
+3. Update the dataDir in zookeeper's conf Directory
+
+dataDir=/mnt/ramdisk/zookeeper3.4.5
+
+Zookeeper now stores the logs on the ramdisk.
+
+
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth
+END
+IPAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/IPAuthenticationProvider.java
+END
+ProviderRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/ProviderRegistry.java
+END
+SaslServerCallbackHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/SaslServerCallbackHandler.java
+END
+AuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/AuthenticationProvider.java
+END
+DigestAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/DigestAuthenticationProvider.java
+END
+KerberosName.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/KerberosName.java
+END
+SASLAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/SASLAuthenticationProvider.java
+END
+DigestLoginModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/auth/DigestLoginModule.java
+END

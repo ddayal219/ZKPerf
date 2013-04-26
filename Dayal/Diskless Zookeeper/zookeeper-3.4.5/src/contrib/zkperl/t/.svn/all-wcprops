@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t
+END
+10_invalid.t
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/10_invalid.t
+END
+35_log.t
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/35_log.t
+END
+30_connect.t
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/30_connect.t
+END
+60_watch.t
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/60_watch.t
+END
+15_thread.t
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/15_thread.t
+END
+24_watch_tie.t
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/24_watch_tie.t
+END
+45_class.t
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/45_class.t
+END
+22_stat_tie.t
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/22_stat_tie.t
+END
+20_tie.t
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/20_tie.t
+END
+40_basic.t
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/40_basic.t
+END
+50_access.t
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/50_access.t
+END
+util.pl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/contrib/zkperl/t/util.pl
+END

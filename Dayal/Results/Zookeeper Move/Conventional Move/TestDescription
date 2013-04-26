@@ -1,0 +1,23 @@
+Test Name:
+
+ZK Performance Test-move
+
+Test Description:
+
+Measure the time taken and the throughput for the execution of move operation in zookeeper.
+
+The Move operation is defined as:
+
+1. Measure Start time.
+2. Create Destination node. zk.create()
+3. Read Data from Source node to a String Variable. zk.get()
+4. Set the data read to the Destination Node. zk.set()
+5. Delete the Source node. zk.delete()
+6. Measure the end time and time difference.
+7. Repeat Step 1 to 6 for different number of Nodes and measure the execution time and throughput.
+
+Also the above the test is repeated for the different configurations. The change in configurations are as follows:
+
+1. Logs on Disk.
+2. Logs on Ramdisk.
+3. Modified zookeeper with No Logging.

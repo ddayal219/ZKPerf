@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c
+END
+Cli.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/Cli.vcproj
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/README
+END
+aminclude.am
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/aminclude.am
+END
+zookeeper.sln
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/zookeeper.sln
+END
+NOTICE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/NOTICE.txt
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/LICENSE
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/configure.ac
+END
+zookeeper.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/zookeeper.vcproj
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/INSTALL
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/acinclude.m4
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/ChangeLog
+END
+c-doc.Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/c/c-doc.Doxyfile
+END

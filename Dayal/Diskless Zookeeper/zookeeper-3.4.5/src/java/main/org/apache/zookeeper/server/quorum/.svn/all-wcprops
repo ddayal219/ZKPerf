@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum
+END
+LocalPeerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LocalPeerMXBean.java
+END
+Election.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Election.java
+END
+FollowerRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/FollowerRequestProcessor.java
+END
+RemotePeerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/RemotePeerMXBean.java
+END
+LearnerZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LearnerZooKeeperServer.java
+END
+ReadOnlyBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyBean.java
+END
+FollowerZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/FollowerZooKeeperServer.java
+END
+QuorumPeer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
+END
+LeaderElectionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderElectionBean.java
+END
+LeaderZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java
+END
+AckRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/AckRequestProcessor.java
+END
+LearnerSessionTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LearnerSessionTracker.java
+END
+AuthFastLeaderElection.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/AuthFastLeaderElection.java
+END
+LeaderBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderBean.java
+END
+QuorumMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumMXBean.java
+END
+FollowerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/FollowerMXBean.java
+END
+LearnerHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LearnerHandler.java
+END
+ReadOnlyRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyRequestProcessor.java
+END
+ReadOnlyZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ReadOnlyZooKeeperServer.java
+END
+Follower.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Follower.java
+END
+QuorumPeerConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerConfig.java
+END
+LocalPeerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LocalPeerBean.java
+END
+FastLeaderElection.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java
+END
+RemotePeerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/RemotePeerBean.java
+END
+ObserverRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ObserverRequestProcessor.java
+END
+ServerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ServerMXBean.java
+END
+ObserverZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ObserverZooKeeperServer.java
+END
+QuorumZooKeeperServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumZooKeeperServer.java
+END
+QuorumStats.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumStats.java
+END
+ProposalRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java
+END
+QuorumPeerMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java
+END
+LeaderElectionMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderElectionMXBean.java
+END
+Vote.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Vote.java
+END
+QuorumBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumBean.java
+END
+FollowerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/FollowerBean.java
+END
+LeaderElection.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderElection.java
+END
+SendAckRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/SendAckRequestProcessor.java
+END
+ObserverMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ObserverMXBean.java
+END
+Observer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Observer.java
+END
+LeaderMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LeaderMXBean.java
+END
+Learner.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Learner.java
+END
+CommitProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/CommitProcessor.java
+END
+QuorumCnxManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/QuorumCnxManager.java
+END
+Leader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/Leader.java
+END
+ServerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/ServerBean.java
+END
+LearnerSyncRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/LearnerSyncRequest.java
+END
+StateSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1411034/zookeeper/tags/release-3.4.5/src/java/main/org/apache/zookeeper/server/quorum/StateSummary.java
+END

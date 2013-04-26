@@ -1,0 +1,10 @@
+Test source code is in the file
+
+1. Add the test Source code into accord/test in the accord source files.
+
+2. Compile it with the following flags and options set:
+
+cc -c -lm -U_FORTIFY_SOURCE -g -O3 -Wall -Wstrict-prototypes -I../include -D_GNU_SOURCE -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   mq.c -o mq.o
+
+cc mq.o ../libacrd/libacrd.a -o mq -lpthread
+

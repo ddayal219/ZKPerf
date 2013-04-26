@@ -1,0 +1,22 @@
+Test Name:
+
+ZK Performance Test - OnDisk
+
+Test Description:
+
+The aim of the test is to measure the write performance of zookeeper with its Default settings. 
+
+The configuration used is:
+
+tickTime=2000
+dataDir=/mnt/ramdisk/zookeeper3.4.5/
+clientPort=2184
+
+The logs are stored on the Disk.
+
+With this Default setting, different Sub scenarios like
+
+1. Replicated Zookeeper with 3 instances
+2. Zookeeper on AWS Instance
+
+are also Tested.
